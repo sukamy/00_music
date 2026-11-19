@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>520页面</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        /* 关键：多层径向渐变叠加 */
+        background:
+          radial-gradient(circle at 10% 20%, #48d0e0, transparent 60%),
+          radial-gradient(circle at 50% 50%, #8878e8, transparent 65%),
+          radial-gradient(circle at 90% 10%, #e97acb, transparent 60%);
+        min-height: 100vh;
+        background-attachment: fixed; /* 滚动时背景固定不动，和原图一致 */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+      .box {
+        width: min(600px, 90%);
+        background: #fff;
+        padding: 32px;
+        border-radius: 12px;
+        line-height: 1.7;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      致康文昌的朋友们：<br />
+      大家看这个页面是不是很漂亮？<br />
+      相信大家在看完我前面的视频后已经能够写出这个简单的页面并发布到网上了。源码就在这个地址：www.midorg.com/520.html
+    </div>
+  </body>
+</html>
